@@ -1,14 +1,7 @@
-import { useState } from "react";
+import Header from './components/Header.jsx'
 
-const Calculate = () => {
-  const [value, setValue] = useState(0);
-  return (
-    <div>
-      <h2>Count: {value}</h2>
-      <button onClick={() => setValue(value+1)}>Increase</button>
-      <button onClick={() => setValue(value-1)}>Decrease</button>
-    </div>
-  );
+function App() {
+  return <Header />
 }
 
-export default Calculate;
+export default App
