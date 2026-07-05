@@ -1,6 +1,8 @@
 import { InfoIcon, UserPlus } from "lucide-react";
-
+import useState from "react";
 const Hero = () => {
+
+    const [count, setCount] = useState(0);
     return(
         <main className="flex items-center p-2 mx-12 my-12">
             <div className="w-13/20">
@@ -17,7 +19,20 @@ const Hero = () => {
         <UserPlus size={18} />
         Enroll Now
     </button>
-</div>
+    </div>  
+
+    <div className="mt-4">
+        <p>Count : {count}</p>
+        <div className="flex gap-2 mt-2">
+    <button className="flex items-center gap-1 border border-fuchsia-500 hover:border-fuchsia-600 bg-fuchsia-100 hover:bg-fuchsia-200 text-fuchsia-700 px-3 py-2 rounded-md" onClick={() => setCount(count + 1)}>
+        Increase Count
+    </button>
+    <button className="flex items-center gap-1 border border-fuchsia-500 hover:border-fuchsia-600 bg-fuchsia-100 hover:bg-fuchsia-200 text-fuchsia-700 px-3 py-2 rounded-md" onClick={() => setCount(count - 1)}>
+        Decrease Count
+    </button>
+        </div> 
+        </div>
+
             </div>
 
             <div className="w-7/20 ml-12">
