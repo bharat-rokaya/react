@@ -1,10 +1,10 @@
 const Login = () => {
     return (
-        <div className="bg-white w-87.5 h-auto p-8 flex-column items-center justify-center rounded-2xl shadow-lg">
+        <div className="bg-white w-87.5 h-auto p-8 flex-col items-center justify-center rounded-2xl shadow-lg">
             <h1 className="text-2xl font-semibold mb-4 text-center">
                 Customer Login
             </h1>
-            <div class="w-full flex-column">
+            <div class="w-full flex-col">
                 <label for="email" className="text-gray-700">
                     Email
                 </label>
