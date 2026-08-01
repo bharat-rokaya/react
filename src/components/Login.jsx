@@ -1,11 +1,11 @@
 const Login = () => {
     return (
-        <div className="bg-white w-87.5 h-auto p-8 flex-col items-center justify-center rounded-2xl shadow-lg">
+        <div className="bg-white max-w-xl w-full h-auto p-8 flex flex-col items-center justify-center rounded-2xl shadow-lg">
             <h1 className="text-2xl font-semibold mb-4 text-center">
                 Customer Login
             </h1>
-            <div class="w-full flex-col">
-                <label for="email" className="text-gray-700">
+            <div className="w-full flex flex-col">
+                <label htmlFor="email" className="text-gray-700">
                     Email
                 </label>
                 <input
@@ -20,7 +20,7 @@ const Login = () => {
                     className="text-red-500 text-sm mb-1 -translate-y-1.5"
                 ></p>
 
-                <label for="password" className="text-gray-700">
+                <label htmlFor="password" className="text-gray-700">
                     Password
                 </label>
                 <input
@@ -31,7 +31,7 @@ const Login = () => {
                     required
                 />
                 <i
-                    className="fa-solid fa-eye text-gray-600 cursor-pointer -translate-y-7.5 translate-x-65"
+                    className="fa-solid fa-eye text-gray-600 cursor-pointer"
                     id="togglePassword"
                 ></i>
                 <p
@@ -42,17 +42,17 @@ const Login = () => {
                 <button
                     type="submit"
                     id="login"
-                    className="w-full bg-fuchsia-500 text-white mt-4 py-1.5 x-4 cursor:pointer transition-scale duration-200 ease rounded-md hover:scale-102 hover:bg-fuchsia-600"
+                    className="w-full bg-fuchsia-500 text-white mt-4 py-1.5 cursor-pointer transition-transform duration-200 ease rounded-md hover:scale-105 hover:bg-fuchsia-600"
                 >
                     Login
                 </button>
             </div>
-            <p class="text-sm text-center mt-4">
+            <p className="text-sm text-center mt-4">
                 Don't have an account?
                 <a
                     href="register.html"
                     target="_blank"
-                    class="text-fuchsia-600 hover:underline"
+                    className="text-fuchsia-600 hover:underline"
                 >
                     Create one here.
                 </a>
